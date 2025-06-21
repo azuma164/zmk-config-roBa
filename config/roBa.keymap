@@ -28,13 +28,18 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SQT>;
             key-positions = <20 21>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <31 32>;
         };
     };
 
@@ -44,6 +49,272 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        Ctrl_up: Ctrl_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp UP_ARROW>;
+            label = "CTRL_UP";
+        };
+
+        Ctrl_down: Ctrl_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp DOWN>;
+            label = "CTRL_DOWN";
+        };
+
+        Ctrl_left: Ctrl_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT>;
+            label = "CTRL_LEFT";
+        };
+
+        Ctrl_right: Ctrl_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp RIGHT>;
+            label = "CTRL_RIGHT";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp N5>;
+            label = "SCREENSHOT";
+        };
+
+        a_to_l0: a_to_l1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lt 1 A &to 0>;
+            label = "A_TO_L1";
+        };
+
+        b_to_0: b_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &to 0>;
+            label = "B_TO_0";
+        };
+
+        c_to_0: c_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &to 0>;
+            label = "C_TO_0";
+        };
+
+        d_to_0: d_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &to 0>;
+            label = "D_TO_0";
+        };
+
+        e_to_0: e_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &to 0>;
+            label = "E_TO_0";
+        };
+
+        f_to_0: f_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &to 0>;
+            label = "F_TO_0";
+        };
+
+        g_to_0: g_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &to 0>;
+            label = "G_TO_0";
+        };
+
+        h_to_0: h_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &to 0>;
+            label = "H_TO_0";
+        };
+
+        i_to_0: i_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &to 0>;
+            label = "I_TO_0";
+        };
+
+        j_to_0: j_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &to 0>;
+            label = "J_TO_0";
+        };
+
+        k_to_0: k_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &to 0>;
+            label = "K_TO_0";
+        };
+
+        l_to_0: l_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &to 0>;
+            label = "L_TO_0";
+        };
+
+        m_to_0: m_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &to 0>;
+            label = "M_TO_0";
+        };
+
+        n_to_0: n_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &to 0>;
+            label = "N_TO_0";
+        };
+
+        o_to_0: o_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &to 0>;
+            label = "O_TO_0";
+        };
+
+        p_to_0: p_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &to 0>;
+            label = "P_TO_0";
+        };
+
+        q_to_0: q_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &to 0>;
+            label = "Q_TO_0";
+        };
+
+        r_to_0: r_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &to 0>;
+            label = "R_TO_0";
+        };
+
+        s_to_0: s_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &to 0>;
+            label = "S_TO_0";
+        };
+
+        t_to_0: t_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &to 0>;
+            label = "T_TO_0";
+        };
+
+        u_to_0: u_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &to 0>;
+            label = "U_TO_0";
+        };
+
+        v_to_0: v_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &to 0>;
+            label = "V_TO_0";
+        };
+
+        w_to_0: w_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &to 0>;
+            label = "W_TO_0";
+        };
+
+        x_to_0: x_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &to 0>;
+            label = "X_TO_0";
+        };
+
+        y_to_0: y_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &to 0>;
+            label = "Y_TO_0";
+        };
+
+        z_to_0: z_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &to 0>;
+            label = "Z_TO_0";
+        };
+
+        dot_to_0: dot_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &to 0>;
+            label = "DOT_TO_0";
+        };
+
+        slash_to_0: slash_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &to 0>;
+            label = "SLASH_TO_0";
+        };
+
+        grave_to_0: backdot_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &to 0>;
+            label = "BACKDOT_TO_0";
+        };
+
+        equal_to_0: equal_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &to 0>;
+            label = "EQUAL_TO_0";
+        };
+
+        bar_to_0: bar_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &to 0>;
+            label = "BAR_TO_0";
+        };
+
+        colomn_to_0: colomn_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON &to 0>;
+            label = "COLOMN_TO_0";
+        };
+
+        sqt_to_0: hat_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &to 0>;
+            label = "HAT_TO_0";
         };
     };
 
@@ -63,10 +334,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R                               &kp T                                                          &kp Y                 &kp U  &lt 5 I    &kp O    &kp P
-&lt 1 A           &kp S             &kp D         &kp F                               &kp G        &kp ESCAPE                         &kp MINUS      &kp H                 &kp J  &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                               &kp B        &kp TAB                            &kp EQUAL      &kp N                 &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                             &kp GRAVE
+&kp Q             &kp W         &kp E             &kp R               &kp T                                                    &kp Y                 &kp U  &lt 5 I    &kp O    &kp P
+&lt 1 A           &kp S         &kp D             &kp F               &kp G        &trans                       &kp MINUS      &kp H                 &kp J  &kp K      &kp L    &kp SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V               &kp B        &kp SQT                      &kp EQUAL      &kp N                 &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &lt_to_layer_0 3 ESCAPE      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                             &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -79,6 +350,8 @@
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans         &kp LEFT_ARROW  &kp DOWN_ARROW        &kp RIGHT_ARROW        &kp BACKSLASH
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRIGHTNESS_DEC>;
         };
 
         NUM {
@@ -88,14 +361,16 @@
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans        &trans        &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                                                      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &screenshot                      &trans  &trans      &trans      &trans       &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans  &trans      &Ctrl_up    &trans       &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans  &Ctrl_left  &Ctrl_down  &Ctrl_right  &trans
+&trans          &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -103,10 +378,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mkp MB4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&q_to_0  &w_to_0  &e_to_0  &r_to_0  &t_to_0                              &y_to_0  &u_to_0  &i_to_0   &o_to_0    &p_to_0
+&trans   &s_to_0  &d_to_0  &f_to_0  &g_to_0  &trans         &bar_to_0    &h_to_0  &j_to_0  &k_to_0   &l_to_0    &colomn_to_0
+&trans   &x_to_0  &c_to_0  &v_to_0  &b_to_0  &sqt_to_0      &equal_to_0  &n_to_0  &m_to_0  &mkp MB1  &dot_to_0  &slash_to_0
+&trans   &trans   &trans   &trans   &trans   &trans         &trans       &trans                                 &grave_to_0
             >;
         };
 
