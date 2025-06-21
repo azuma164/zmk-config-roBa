@@ -68,9 +68,6 @@
         #input-processor-cells = <2>;
         excluded-positions = <
             18 // J
-            19 // K
-            21 // ;
-            34 // Ctrl
         >;
     };
 
