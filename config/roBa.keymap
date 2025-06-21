@@ -89,7 +89,7 @@
         a_to_l0: a_to_l1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &lt 1 A>;
+            bindings = <&to 0 &lt 2 A>;
             label = "A_TO_L1";
         };
 
@@ -335,12 +335,21 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E             &kp R               &kp T                                                    &kp Y                 &kp U  &kp I      &kp O      &kp P
-&lt 1 A           &kp S         &kp D             &kp F               &kp G        &trans                       &kp MINUS      &kp H                 &kp J  &kp K      &kp L      &kp SEMI
+&lt 2 A           &kp S         &kp D             &kp F               &kp G        &trans                       &kp MINUS      &kp H                 &kp J  &kp K      &kp L      &kp SEMI
 &mt LEFT_SHIFT Z  &kp X         &kp C             &kp V               &kp B        &kp SQT                      &kp EQUAL      &kp N                 &kp M  &kp COMMA  &lt 5 DOT  &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &lt_to_layer_0 3 ESCAPE      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                               &kp GRAVE
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 3 SPACE  &lt_to_layer_0 4 ESCAPE      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                               &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        MOUSE {
+            bindings = <
+&q_to_0           &w_to_0       &e_to_0           &r_to_0             &t_to_0                                       &y_to_0               &u_to_0  &i_to_0   &o_to_0    &p_to_0
+&mt A D           &s_to_0       &d_to_0           &f_to_0             &g_to_0      &trans            &bar_to_0      &h_to_0               &j_to_0  &k_to_0   &l_to_0    &colomn_to_0
+&mt LEFT_SHIFT Z  &x_to_0       &c_to_0           &v_to_0             &b_to_0      &sqt_to_0         &equal_to_0    &n_to_0               &m_to_0  &mkp MB1  &dot_to_0  &slash_to_0
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 3 SPACE  &lt 4 ESCAPE      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                                &grave_to_0
+            >;
         };
 
         FUNCTION {
@@ -374,15 +383,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
-            bindings = <
-&q_to_0           &w_to_0       &e_to_0           &r_to_0             &t_to_0                                       &y_to_0               &u_to_0  &i_to_0   &o_to_0    &p_to_0
-&mt A D           &s_to_0       &d_to_0           &f_to_0             &g_to_0      &trans            &bar_to_0      &h_to_0               &j_to_0  &k_to_0   &l_to_0    &colomn_to_0
-&mt LEFT_SHIFT Z  &x_to_0       &c_to_0           &v_to_0             &b_to_0      &sqt_to_0         &equal_to_0    &n_to_0               &m_to_0  &mkp MB1  &dot_to_0  &slash_to_0
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &lt 3 ESCAPE      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                                &grave_to_0
-            >;
         };
 
         SCROLL {
